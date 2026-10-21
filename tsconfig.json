@@ -21,15 +21,6 @@
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": [
-        "./*"
-      ]
-    },
-    "types": [
-      "node",
-      "@cloudflare/workers-types"
     ]
   },
   "include": [
@@ -37,17 +28,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    ".next/dev/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules",
-    "examples",
-    "dist",
-    ".vinext",
-    ".wrangler",
-    ".sites-runtime",
-    "outputs",
-    "work"
+    "node_modules"
   ]
 }

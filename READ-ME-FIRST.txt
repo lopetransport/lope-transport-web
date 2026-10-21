@@ -1,0 +1,9 @@
+LOPE TRUCKING SERVICES — FLAT GITHUB UPLOAD
+
+1. Unzip this package. Select ALL SIX files and upload them into the ROOT of lopetransport/lope-transport-web, replacing existing files of the same name. Upload the extracted files, not the ZIP itself.
+2. In Vercel: Project Settings > Build and Deployment > Root Directory. Remove lope-transport-web and leave the field EMPTY. Save.
+3. Redeploy the LATEST commit. Framework is Next.js; the included vercel.json sets install/build/output commands. Use Node.js 22.x.
+
+No folder upload is needed. site-files.json contains the complete pages and images. restore-site.cjs reconstructs the app/public/db folders before installation and before each build. All files are bundled locally; it downloads no application code.
+
+If GitHub rejects replacing a file, open that existing file, choose Edit, and replace its contents with the matching package file.
