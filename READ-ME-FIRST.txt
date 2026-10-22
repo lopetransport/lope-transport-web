@@ -1,9 +1,7 @@
-LOPE — HEADER & HAULER PORTAL FIX
+LOPE — SERVICES, FLEET, ABOUT & FAQ PAGES
 
-Upload ALL SIX extracted files to the ROOT of lopetransport/lope-transport-web, replacing the matching files. Commit the upload and deploy the latest commit in Vercel. Root Directory remains empty; Node.js 22.x.
+Upload ALL SIX extracted files to the root of lopetransport/lope-transport-web, replacing matching files. Commit changes. Open the new commit deployment in Vercel and verify the content at /services, /fleet, /about and /faqs. Promote that deployment to Production if the usual domain still shows an older version. Use the project that owns your public domain.
 
-Hauler portal now opens the real Supabase operations portal in a pop-up, with Transporter / Hauler selected. Portal sign in opens the same portal for clients. The full-page option is available inside the pop-up. Become a partner alone leads to the existing onboarding website.
+Services: six service descriptions and enquiry actions. Fleet: capacity planning, vehicle options and routes. About Lope: established date, Midrand base and operating approach. FAQs: 12 practical questions about quotes, routes, cover, portal use and partner applications.
 
-Header navigation is now Services, Fleet, About Lope and FAQs. The FAQ section is available on the homepage. The three main action blocks remain in place.
-
-This package includes the complete previous portal implementation. Keep site-files.json: it contains all source files and assets. Existing Supabase Auth/admin setup steps in lope-portal-setup.md still apply. No database migration is required for this update.
+The existing three action blocks and working portal pop-up are included. This is a complete update, not a patch requiring earlier ZIPs. Root Directory remains empty, Node.js 22.x. Keep site-files.json; it restores all website code and assets. No new database migration is needed.
