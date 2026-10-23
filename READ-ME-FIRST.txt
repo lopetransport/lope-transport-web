@@ -1,8 +1,8 @@
-LOPE — RESTRAINED MOTION & PORTAL UPDATE
+LOPE — SIGNATURE MOTION & PORTAL UPDATE
 
 Upload ALL SIX extracted files to the ROOT of lopetransport/lope-transport-web, replacing matching files. Keep site-files.json. Commit, then deploy that new commit in Vercel and ensure the intended deployment is Production. Root Directory empty, Node.js 22.x.
 
-MOTION: Short hero entrance and image settle; once-only scroll reveals; slim header reading-progress line; navigation underline and arrow feedback; fleet illustration movement; route-line draw; animated fleet and route selection details; FAQ and dialog entrances. Native scrolling is preserved. Reduced-motion preferences disable the effects. No additional animation dependencies.
+MOTION: Masked rolling headline entrance; cinematic image reveal and scroll-linked truck image depth; decorative red route trace; scroll-driven Collect / Connect / Deliver rail; editorial section reveals; desktop pointer-responsive card depth and red highlights; navigation and arrow feedback; fleet and route selection changes; FAQ and dialog transitions. Native scrolling is preserved. Reduced-motion preferences disable these effects. No extra animation library.
 
 CLIENT: Paid fleet & telematics customer workspace with onboarding verification, subscription period, enrolled fleet, billing, support and profile. LTS must activate the account AND record paid onboarding plus a current active subscription. Registration does not activate package access. Live tracking is explicitly NOT YET CONNECTED; drive-smart-lope is not configured or linked. No tracking data is simulated.
 
