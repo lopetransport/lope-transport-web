@@ -1,6 +1,8 @@
-LOPE — SIGNATURE MOTION & PORTAL UPDATE
+LOPE — MOBILE TRUCK PAN UPDATE
 
 Upload ALL SIX extracted files to the ROOT of lopetransport/lope-transport-web, replacing matching files. Keep site-files.json. Commit, then deploy that new commit in Vercel and ensure the intended deployment is Production. Root Directory empty, Node.js 22.x.
+
+MOBILE HERO: Scroll-driven pan from the cab towards the rear trailers on screens up to 800px wide. The pan completes while the truck remains in view, reverses naturally on upward scrolling, and uses a static crop for reduced-motion visitors. Desktop framing and the Collect / Connect / Deliver markup, styling and progress sequence are preserved.
 
 MOTION: Masked rolling headline entrance; cinematic image reveal and scroll-linked truck image depth; decorative red route trace; scroll-driven Collect / Connect / Deliver rail; editorial section reveals; desktop pointer-responsive card depth and red highlights; navigation and arrow feedback; fleet and route selection changes; FAQ and dialog transitions. Native scrolling is preserved. Reduced-motion preferences disable these effects. No extra animation library.
 
