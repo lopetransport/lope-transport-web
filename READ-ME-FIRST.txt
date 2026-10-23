@@ -1,6 +1,8 @@
-LOPE — SEPARATE CLIENT & TRANSPORTER PORTALS
+LOPE — RESTRAINED MOTION & PORTAL UPDATE
 
 Upload ALL SIX extracted files to the ROOT of lopetransport/lope-transport-web, replacing matching files. Keep site-files.json. Commit, then deploy that new commit in Vercel and ensure the intended deployment is Production. Root Directory empty, Node.js 22.x.
+
+MOTION: Short hero entrance and image settle; once-only scroll reveals; slim header reading-progress line; navigation underline and arrow feedback; fleet illustration movement; route-line draw; animated fleet and route selection details; FAQ and dialog entrances. Native scrolling is preserved. Reduced-motion preferences disable the effects. No additional animation dependencies.
 
 CLIENT: Paid fleet & telematics customer workspace with onboarding verification, subscription period, enrolled fleet, billing, support and profile. LTS must activate the account AND record paid onboarding plus a current active subscription. Registration does not activate package access. Live tracking is explicitly NOT YET CONNECTED; drive-smart-lope is not configured or linked. No tracking data is simulated.
 
@@ -10,6 +12,6 @@ ADMIN: Accounts manages account approval. Client packages manages verified onboa
 
 SUPABASE: New client_memberships and client_fleet_assets tables, RLS, admin write policies, expiry gates and realtime publication are already applied to ksdjhmzneffrothktcvb. Do not rerun db/client-memberships.sql on that project. It is included as a schema record. No existing client payment or subscription has been marked paid. Existing quote/job history is retained.
 
-VERIFICATION: Production Next.js build and TypeScript passed. SQL transaction tests passed for ownership isolation, admin writes, denied client payment changes, unpaid/expired/suspended access, hauler separation and anonymous denial. Test data was rolled back. Security advisor reports no new issue on these tables. Local browser preview was unavailable due to localhost connection timeouts; visual QA remains to be completed after deployment.
+VERIFICATION: Production Next.js build and TypeScript passed. SQL transaction tests passed for ownership isolation, admin writes, denied client payment changes, unpaid/expired/suspended access, hauler separation and anonymous denial. Test data was rolled back. Security advisor reports no new issue on these tables. Browser verification completed on the production preview: homepage rendering, scroll reveals, quote dialog open/close, Fleet navigation and selection, and FAQ expansion. Desktop overflow check passed. Mobile and reduced-motion behavior are implemented but were not browser-emulated in this session.
 
 SMTP confirmation email remains a separate unresolved Afrihost support issue. Website contact stays ops@lopetransport.co.za; automated sender remains intended no-reply@lopetransport.co.za.
