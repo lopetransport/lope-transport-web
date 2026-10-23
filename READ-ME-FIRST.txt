@@ -1,7 +1,9 @@
-LOPE — SERVICES, FLEET, ABOUT & FAQ PAGES
+LOPE — FREIGHT, DECODED + OPS EMAIL UPDATE
 
-Upload ALL SIX extracted files to the root of lopetransport/lope-transport-web, replacing matching files. Commit changes. Open the new commit deployment in Vercel and verify the content at /services, /fleet, /about and /faqs. Promote that deployment to Production if the usual domain still shows an older version. Use the project that owns your public domain.
+Upload ALL SIX extracted files to the ROOT of lopetransport/lope-transport-web, replacing the existing matching files. Commit changes. Open the deployment for that NEW commit in Vercel and promote it to Production if your usual address is still serving an older deployment. Root Directory empty. Node.js 22.x.
 
-Services: six service descriptions and enquiry actions. Fleet: capacity planning, vehicle options and routes. About Lope: established date, Midrand base and operating approach. FAQs: 12 practical questions about quotes, routes, cover, portal use and partner applications.
+The black utility strip now opens Freight, decoded, replacing the duplicate Hauler portal entry. The glossary includes 27 plain-English terms, five categories, instant search and practical examples. Portal sign in remains the place for client, hauler and admin accounts.
 
-The existing three action blocks and working portal pop-up are included. This is a complete update, not a patch requiring earlier ZIPs. Root Directory remains empty, Node.js 22.x. Keep site-files.json; it restores all website code and assets. No new database migration is needed.
+All dispatch@lopetransport.co.za website contact links now use ops@lopetransport.co.za, including prepared quote/dispatch emails, contact areas and privacy notices. Dispatch is still the service name. This does not change mailbox/DNS/SMTP configuration.
+
+This is a complete website update containing all previous portal, registration, footer and information-page changes. Keep site-files.json. It contains the complete website source and assets. No additional database migration or dependencies are required.
