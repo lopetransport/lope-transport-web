@@ -1,6 +1,8 @@
-LOPE — GLASS SOCIAL PANEL UPDATE
+LOPE — MOBILE GLASS SERVICES UPDATE
 
 Upload ALL SIX extracted files to the ROOT of lopetransport/lope-transport-web, replacing matching files. Keep site-files.json. Commit, then deploy that new commit in Vercel and ensure the intended deployment is Production. Root Directory empty, Node.js 22.x.
+
+MOBILE SERVICES: The four What we do services become rounded glass cards on screens up to 800px. Titles remain visible; descriptions unfold with native scroll progress, with a travelling highlight, red underline and brief sticky hold per card. Reverse scrolling reverses the reveal. Desktop rows retain their existing styling. Reduced-motion and no-JavaScript visitors see all descriptions. Production build and TypeScript passed; all four descriptions checked at 390px, desktop row styles and overflow checked. Collect / Connect / Deliver and useSiteMotion are unchanged.
 
 SOCIAL PANEL: The red contact CTA transitions through a slow scroll-driven diagonal reveal into a faceted dark glass social panel. Typography follows Freight, decoded. The reference social hover was inspected: individual letters roll upward with a shadow copy; this uses the same effect with staggered letters. Confirmed links: https://x.com/lopetransport ; https://www.instagram.com/lopetransport/ ; https://www.facebook.com/lopetransport ; https://wa.me/27634188201 . Links open a new tab. Keyboard focus has the rolling effect; inactive panels are inert. Reduced motion shows both panels statically. No portal or backend changes.
 
