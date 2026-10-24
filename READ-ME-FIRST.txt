@@ -1,6 +1,8 @@
-LOPE — COMPACT HOVER REVEAL CARDS
+LOPE — GLASS SOCIAL PANEL UPDATE
 
 Upload ALL SIX extracted files to the ROOT of lopetransport/lope-transport-web, replacing matching files. Keep site-files.json. Commit, then deploy that new commit in Vercel and ensure the intended deployment is Production. Root Directory empty, Node.js 22.x.
+
+SOCIAL PANEL: The red contact CTA transitions through a slow scroll-driven diagonal reveal into a faceted dark glass social panel. Typography follows Freight, decoded. The reference social hover was inspected: individual letters roll upward with a shadow copy; this uses the same effect with staggered letters. Confirmed links: https://x.com/lopetransport ; https://www.instagram.com/lopetransport/ ; https://www.facebook.com/lopetransport ; https://wa.me/27634188201 . Links open a new tab. Keyboard focus has the rolling effect; inactive panels are inert. Reduced motion shows both panels statically. No portal or backend changes.
 
 MOBILE HERO: On screens up to 800px wide, the hero stays pinned during a scroll-driven pan and zoom-out, revealing the full cab and both trailers together. The complete truck view holds before the scene releases to the action buttons. During release the image gently scales back, lifts and fades into the page background in direct response to scrolling. There is no added scroll distance or timed waiting step; scrolling back reverses the exit. Movement uses GPU-friendly transforms rather than object-position changes. Natural scrolling is retained; no wheel or touch events are intercepted. Reduced-motion visitors get the static hero without the extended sequence. Desktop framing and the Collect / Connect / Deliver markup, styling and progress sequence are preserved.
 
