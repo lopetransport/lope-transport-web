@@ -1,6 +1,8 @@
-LOPE — SHARP VECTOR LOGO UPDATE
+LOPE — MOBILE LOGO SHARPNESS UPDATE
 
 Upload ALL SIX extracted files to the ROOT of lopetransport/lope-transport-web, replacing matching files. Keep site-files.json. Commit, then deploy that new commit in Vercel and ensure the intended deployment is Production. Root Directory empty, Node.js 22.x.
+
+MOBILE LOGO: The signature now renders as inline vector paths using currentColor, avoiding image texture/raster and inversion-filter layers on mobile. Website phone wordmark and tiny subtitle are enlarged and weighted for clearer reading, with a narrow-screen fit at 360px and below. Portal logos use white inline paths without a filter. Desktop mark geometry remains the same. No motion controls or pause icons have been reintroduced.
 
 CLEAN BRANDING: All website header/footer and portal auth/sidebar signatures now use the same true path-only SVG traced from the original signature silhouette. Three contours preserve the mark. There are no embedded pixels, filters or image dependencies in the signature asset. It has a tight viewBox, scales cleanly and is about 10KB. White areas are transparent by geometry; dark backgrounds invert the black mark to white. The favicon uses the same vector path, adapts to dark tabs, and has a new versioned URL. No other site behavior changed in this update. Portal p-brand has no background, border or padding plate. Favicon uses the signature rather than an L, with a versioned URL to refresh browser caches. No visible motion selector remains and stored site strength choices are ignored; the browser OS reduced-motion accessibility preference is still respected. The capabilities strip has no visible pause icon. Its transparent full-area button toggles pause on click/tap anywhere, and Enter/Space work for keyboard users. It starts moving, and a second click resumes it. Existing social rendering optimizations remain. Collect/Connect/Deliver is unchanged.
 
