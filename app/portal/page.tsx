@@ -1,0 +1,1 @@
+import {redirect} from 'next/navigation';import {requireProfile} from '../../lib/supabase-server';export const dynamic='force-dynamic';export default async function Portal(){const p=await requireProfile();redirect('/portal/'+p.role)}

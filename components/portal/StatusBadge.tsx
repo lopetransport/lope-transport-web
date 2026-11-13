@@ -1,0 +1,1 @@
+export default function StatusBadge({status}:{status:string}){return <span className={'p-badge '+(status==='active'||status==='approved'||status==='paid'||status==='delivered'?'p-good':status==='rejected'||status==='suspended'||status==='past_due'||status==='expired'||status==='cancelled'?'p-danger':'p-pending')}>{status.replaceAll('_',' ')}</span>;}

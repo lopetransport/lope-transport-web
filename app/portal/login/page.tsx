@@ -1,0 +1,2 @@
+import AuthPanel from '../../../components/portal/AuthPanel';
+export default async function Page({searchParams}:{searchParams:Promise<{account?:string;verification?:string}>}){const {account,verification}=await searchParams;return <AuthPanel mode="login" initialRole={account==='hauler'?'hauler':'client'} initialNotice={verification==='retry'?'This confirmation link could not be verified. It may have expired or already been used. Try signing in, request a fresh confirmation from registration, or contact ops@lopetransport.co.za.':''}/>;}

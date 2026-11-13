@@ -1,0 +1,14 @@
+export type Role='client'|'hauler'|'admin';
+export type Membership={id:string;client_id:string;onboarding_status:string;subscription_status:string;package_name:string;subscription_until:string|null};
+export type ClientAsset={id:string;client_id:string;registration_number:string;vehicle_description:string};
+export const clientServiceActive=(profile:Profile,m?:Membership)=>profile.account_status==='active'&&m?.onboarding_status==='paid'&&m.subscription_status==='active'&&!!m.subscription_until&&m.subscription_until>=new Date().toLocaleDateString('en-CA',{timeZone:'Africa/Johannesburg'});
+export type Profile={id:string;company_name:string;contact_person:string;email:string;phone:string;role:Role;account_status:'pending_review'|'active'|'suspended';created_at:string};
+export type Quote={id:string;client_id:string;freight_enquiry_id:string|null;origin:string;destination:string;cargo_type:string;tonnage:number;preferred_date:string|null;status:string;quoted_amount:number|null;created_at:string};
+export type Job={id:string;client_id:string;quote_id:string|null;origin:string;destination:string;cargo_type:string;tonnage:number;status:string;assigned_hauler_id:string|null;assigned_vehicle_id:string|null;pickup_instructions:string;delivery_instructions:string;updated_at:string};
+export type Vehicle={id:string;hauler_id:string;registration_number:string;asset_kind:string;vehicle_type:string;make_model:string;payload_capacity:number;is_available:boolean;git_insurance_status:string;git_expires_on:string|null;approval_status:string;rejection_reason:string|null};
+export type Document={id:string;hauler_id:string;vehicle_id:string|null;document_type:string;storage_path:string;file_name:string;expires_on:string|null;status:string;review_notes:string|null};
+export type Invoice={id:string;client_id:string;job_id:string|null;invoice_number:string;amount:number;currency:string;due_date:string;status:string};
+export type Enquiry={id:string;name:string;company:string;email:string;phone:string;pickup:string;delivery:string;cargo:string;capacity:string;date:string|null;status:string};
+export type Dispatch={id:string;name:string;email:string;message:string;status:string};
+export const money=(value:number)=>new Intl.NumberFormat('en-ZA',{style:'currency',currency:'ZAR'}).format(value);
+export const dateLabel=(value:string|null)=>value?new Date(value.slice(0,10)+'T12:00:00').toLocaleDateString('en-ZA',{day:'numeric',month:'short',year:'numeric'}):'Not specified';
