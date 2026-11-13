@@ -1,0 +1,21 @@
+Lope TMS customer tracking rollout
+
+1. Deploy the companion site-files.json to the root of lope-transport-web on
+   GitHub and wait for Vercel to finish. This removes the duplicate admin form.
+2. Extract this archive over the active Lope TMS folder, keeping its .env file.
+   From that folder, run npm run migrate:portal with the existing migration
+   database credentials.
+3. Configure HTTPS for track.lopetransport.co.za. Route only POST requests to
+   /api/v1/public-tracking/<numeric delivery ID> to the local TMS listener on
+   127.0.0.1:4175. Deny all other public paths and methods. Forward the
+   Authorization header and apply a request rate limit. Keep the TMS running.
+4. Add PUBLIC_TRACKING_ENABLED=true to the TMS .env and restart the TMS.
+   In Client tracking, create a link for a pilot delivery. The URL should begin
+   with https://www.lopetransport.co.za/track/tms-.
+5. Open the full link on a phone using mobile data. Verify a fresh GPS fix.
+   Mark the pilot delivery Delivered in the TMS, then verify the same link
+   shows Delivered without the truck location. Cancelled links close.
+
+New public tracking allows one active shared delivery per vehicle. Close each
+delivery before reassigning its vehicle. The existing time-limited local links
+remain readable through their original addresses.
